@@ -1,0 +1,19 @@
+#python veri tipleri
+sayi1=100 #integer/tam sayı tanımlama
+sayi2=3.14 #float/ondalıklı sayı tanımlama
+kelime="python" #katar/string tanımlama
+liste=[1,2,3,4] #list tanımlama/bileşik veri tipi
+tuple=(1,2,3) #listeye benzer veri tipi
+
+#kodlama.io'da yer alan veri tipleri
+#string
+#sitede yer alan başlıklar (kurslarım, tüm kurslar, kariyer,sık sorulan sorular, giriş yap, kayıt ol)
+#list
+#ana sayfadaki kategori ve eğitmen seçenekleri
+#profil
+#integer
+#eğitimin ne kadar tamamlandığının gösterimi
+
+#kodlama.io'da yer alan şart blokları
+#giriş yapmak (eğer şifre doğruysa girilir, yanlışsa girilmez)
+#giriş yapmadıysan kurslara kayıt olmak (giriş yaptıysan kayıt olursun, yapmadıysan giriş yapmanı ister)
