@@ -11,6 +11,32 @@
 #fonksiyonları geliştiriniz ve her bir fonksiyonu en az bir kere çağırarak konsolda test ediniz.
 
 #Ödevde kullanacağınız döngülerin bir tanesi for bir tanesi while döngüsü olması istenmektedir
+liste=["simay","bahar","ece"]
+def ogrenci_ekleme():
+  ad_soyad=input("Eklemek istediğiniz öğrencinin adı-soyadı: ")
+  liste.append(ad_soyad)
+  print(f"{ad_soyad} başarıyla listeye eklenmiştir.")
+def ogrenci_cikarma():
+  ad_soyad=input("Çıkarmak istediğiniz öğrencinin adı-soyadı: ")
+  liste.remove(ad_soyad)
+  print(f"{ad_soyad} başarıyla listeden çıkarılmıştır.")
+def ogrencileri_ekleme():
+  ögrenci_sayisi=int(input("Eklemek istediğiniz öğrenci sayısını giriniz: "))
+  i=0
+  while i<ögrenci_sayisi:
+    ad_soyad=input(f"Eklemek istediğiniz {i+1}. öğrencinin adı-soyadı: ")
+    liste.append(ad_soyad)
+    i=i+1
+  print("Öğrenciler başarıyla eklenmiştir.")
+def liste_goruntuleme():
+  print(liste)
+def numara_gosterme():
+  ad_soyad=input("Numarasını istediğiniz öğrencinin adı-soyadı: ")
+  if (ad_soyad in liste):
+    numara= liste.index(ad_soyad)
+    print(f"Öğrencinin numarası: {numara}")
+  else:
+    print("Öğrenci listede bulunmamaktadır.")
 print("ÖĞRENCİ KAYIT SİSTEMİNE HOŞGELDİNİZ")
 print("Kayıt Sisteminde Yapılabilecek İşlemler")
 print("1-Öğrenci Ekleme")
@@ -19,25 +45,17 @@ print("3-Birden Fazla Öğrenci Ekleme")
 print("4-Öğrenci Listesini Görüntüleme")
 print("5-Öğrenci Numarası Gösterme")
 print("Not:Yapacağınız İşlemler Bitince Çıkmak İçin 6'ya basınız.")
-liste=[" "]
-sayi=input("Yapacağınız işlemin numarasını giriniz: ")
-if sayi==1:
-  ad_soyad=input("Eklemek istediğiniz öğrencinin adı-soyadı: ")
-  liste.append(ad_soyad)
-  print(f"{ad_soyad} başarıyla listeye eklenmiştir.")
-elif sayi==2:
-  ad_soyad=input("Çıkarmak istediğiniz öğrencinin adı-soyadı: ")
-  liste.remove(ad_soyad)
-  print(f"{ad_soyad} başarıyla listeden çıkarılmıştır.")
-elif sayi==3:
-  ögrenci_sayisi=input("Eklemek istediğiniz öğrenci sayısını giriniz: ")
-  i=0
-  while i<ögrenci_sayisi:
-    ad_soyad=input(f"Eklemek istediğiniz {i}. öğrencinin adı-soyadı: ")
-    liste.append(ad_soyad)
-  print("Öğrenciler başarıyla eklenmiştir.")
-elif sayi==4:
-  print(liste)
-elif sayi==5:
-  okul_numarasi=input("Numarasını istediğiniz öğrencinin adı-soyadı: ")
-  if 
+sayi=int(input("Yapacağınız işlemin numarasını giriniz: "))
+while sayi<6:
+  if sayi==1:
+    ogrenci_ekleme()
+  elif sayi==2:
+    ogrenci_cikarma()
+  elif sayi==3:
+    ogrencileri_ekleme()
+  elif sayi==4:
+    liste_goruntuleme()
+  elif sayi==5:
+    numara_gosterme()
+else:
+  print("Girdiğiniz numara hatalı. Tekrar giriniz.")
