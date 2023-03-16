@@ -44,7 +44,6 @@ print("2-Öğrenci Çıkarma")
 print("3-Birden Fazla Öğrenci Ekleme")
 print("4-Öğrenci Listesini Görüntüleme")
 print("5-Öğrenci Numarası Gösterme")
-print("Not:Yapacağınız İşlemler Bitince Çıkmak İçin 6'ya basınız.")
 sayi=int(input("Yapacağınız işlemin numarasını giriniz: "))
 while sayi<6:
   if sayi==1:
