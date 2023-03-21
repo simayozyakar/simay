@@ -1,0 +1,21 @@
+#HTML
+#Hiper Metin İşaretleme Dili (HTML, İngilizce Hyper Text Markup Language kelimelerinin baş harflerinin kısaltılmasıdır) web sayfalarını oluşturmak için kullanılan 
+#standart metin işaretleme dilidir. HTML, bir programlama dili olarak tanımlanamaz. HTML kodlarıyla kendi başına çalışan bir program yazılamaz ama bu dili 
+#yorumlayabilen programlar aracılığıyla çalışabilen programlar yazılabilir. Temel gereği yazı, görüntü, video gibi değişik verileri ve bunları içeren sayfaları 
+#birbirine basitçe bağlamak, buna ek olarak söz konusu sayfaların web tarayıcısı yazılımları tarafından düzgün olarak görüntülenmesi için gerekli kuralları belirlemektir. 
+
+#HTML LOCATORS
+#HTML Locators: HTML Locators, web sayfalarında belirli bir öğenin (element) yerini tespit etmek için kullanılan bir yöntemdir. 
+#Selenium gibi otomasyon araçları, web sayfalarındaki öğeleri (butonlar, metin kutuları, linkler vb.) tanımlamak ve onlarla etkileşim kurmak için bu yöntemi kullanır. 
+#HTML Locators, öğelerin id, name, class, tagname, linktext ve partial linktext gibi özelliklerine göre belirlenebilir. 
+#Locatorlar ile selenium html dilinde yazılmış olan web sitesiyle etkileşime girebilmektedir. 
+
+#SELENIUM AKSIYONLAR
+#click(): Bir öğeye tıklamak için kullanılır. 
+#send_keys(): Bir öğeye metin göndermek için kullanılır. 
+#clear(): Bir öğedeki mevcut metni temizlemek için kullanılır. 
+#submit(): Bir formu göndermek için kullanılır. 
+#get(): Belirli bir URL'yi açmak için kullanılır. 
+#back(): Önceki sayfaya geri dönmek için kullanılır. 
+#forward(): İleri gitmek için kullanılır. 
+#refresh(): Sayfayı yenilemek için kullanılır.
